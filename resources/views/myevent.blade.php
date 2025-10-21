@@ -31,10 +31,24 @@
             transform: translateY(-5px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .event-status-badge {
+        /* my event - upcoming style*/
+        .upcoming {
+            color: #1174ccff;
             font-size: 0.8em;
             padding: 0.4em 0.6em;
-            border-radius: 0.25rem;
+          
+        }
+        /* my event - pending style */
+        .pending {
+            color : #dd9f01ff;
+            font-size: 0.8em;
+            padding: 0.4em 0.6em;
+        }
+        /* my event - completed style*/
+        .completed {
+            color: green;
+            font-size: 0.8em;
+            padding: 0.4em 0.6em;
         }
         .status-upcoming { background-color: #17a2b8; color: white; } 
         .status-completed { background-color: #28a745; color: white; } 
@@ -90,6 +104,16 @@
         .btn-red:hover {
             background-color: #8B0000; 
             border-color: #8B0000;
+        }
+        /* style for venues/date/time/eventname */
+        .icon-color {
+            color: #8B0000;
+        }
+        .text-color-venue {
+            color: #000000ff;
+            font-size: 16px;
+            font-weight: light;
+            font-family: Serif;
         }
 
     </style>
@@ -204,18 +228,19 @@
                 <div class="card h-100 shadow-sm event-card">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <span>Annual Sports Fest</span>
-                        <span class="event-status-badge status-upcoming">Upcoming</span>
+                        <span class="upcoming">Upcoming</span>
                     </div>
                     <div class="card-body">
-                        <p class="card-text mb-2">
-                            <span class="badge-venue"><i class="fas fa-map-marker-alt"></i> Grand Auditorium</span>
+                        <p class="card-text mb-3">
+                           <i class="fas fa-map-marker-alt icon-color"></i>
+                           <span class="text-color-venue"> Grand Auditorium</span>
                         </p>
-                        <p class="card-text mb-2">
-                            <span class="badge-time"><i class="far fa-calendar-alt"></i> Nov 20, 2023</span>
-                            <span class="badge-time ms-2"><i class="far fa-clock"></i> 9:00 AM - 5:00 PM</span>
+                        <p class="card-text mb-3">
+                            <span class="text-color-venue"><i class="far fa-calendar-alt icon-color"></i> Nov 20, 2023</span>
+                            <span class="text-color-venue ms-2"><i class="far fa-clock icon-color"></i> 9:00 AM - 5:00 PM</span>
                         </p>
-                        <p class="card-text mb-2">
-                            <span class="badge-type"><i class="fas fa-tag"></i> Sports Event</span>
+                        <p class="card-text mb-3">
+                            <span class="text-color-venue"><i class="fas fa-tag icon-color"></i> Sports Event</span>
                         </p>
                         <hr>
                         <p class="card-text text-muted small">Created by John Doe 2 days ago.</p>
@@ -232,24 +257,25 @@
                 <div class="card h-100 shadow-sm event-card">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <span>Graduation Ceremony</span>
-                        <span class="event-status-badge status-completed">Completed</span>
+                        <span class="completed">Completed</span>
                     </div>
                     <div class="card-body">
-                        <p class="card-text mb-2">
-                            <span class="badge-venue"><i class="fas fa-map-marker-alt"></i> Main Hall</span>
+                        <p class="card-text mb-3">
+                            <i class="fas fa-map-marker-alt icon-color"></i>
+                            <span class="text-color-venue"> Main Hall</span>
                         </p>
-                        <p class="card-text mb-2">
-                            <span class="badge-time"><i class="far fa-calendar-alt"></i> Oct 15, 2023</span>
-                            <span class="badge-time ms-2"><i class="far fa-clock"></i> 2:00 PM - 5:00 PM</span>
+                        <p class="card-text mb-3">
+                            <span class="text-color-venue"><i class="far fa-calendar-alt icon-color"></i> Oct 15, 2023</span>
+                            <span class="text-color-venue ms-2"><i class="far fa-clock icon-color"></i> 2:00 PM - 5:00 PM</span>
                         </p>
-                        <p class="card-text mb-2">
-                            <span class="badge-type"><i class="fas fa-tag"></i> Academic</span>
+                        <p class="card-text mb-3">
+                            <span class="text-color-venue"><i class="fas fa-tag icon-color"></i> Academic</span>
                         </p>
                         <hr>
                         <p class="card-text text-muted small">Booked by Jane Smith 1 month ago.</p>
                         <div class="d-flex justify-content-end">
-                            <a href="#" class="btn btn-sm btn-outline-primary me-2"><i class="fas fa-eye"></i> View</a>
-                            <a href="#" class="btn btn-sm btn-outline-secondary disabled"><i class="fas fa-edit"></i> Edit</a>
+                           <a href="#" class="btn btn-sm btn-outline-primary me-2"><i class="fas fa-eye"></i> View</a>
+                           <a href="#" class="btn btn-sm btn-outline-secondary"><i class="fas fa-edit"></i> Edit</a>
                         </div>
                     </div>
                 </div>
@@ -260,18 +286,20 @@
                 <div class="card h-100 shadow-sm event-card">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <span>Lecture Series - AI & Future</span>
-                        <span class="event-status-badge status-pending">Pending</span>
+                        <span class="pending">Pending</span>
                     </div>
                     <div class="card-body">
-                        <p class="card-text mb-2">
-                            <span class="badge-venue"><i class="fas fa-map-marker-alt"></i> Conference Room 1</span>
+                        <p class="card-text mb-3">
+                            <i class="fas fa-map-marker-alt icon-color"></i>
+                            <span class="text-color-venue"> Conference Room 1</span>
                         </p>
-                        <p class="card-text mb-2">
-                            <span class="badge-time"><i class="far fa-calendar-alt"></i> Dec 1, 2023</span>
-                            <span class="badge-time ms-2"><i class="far fa-clock"></i> 10:00 AM - 12:00 PM</span>
+                        <p class="card-text mb-3">
+                            <span class="text-color-venue"><i class="far fa-calendar-alt icon-color"></i> Dec 1, 2023</span>
+                            <span class="text-color-venue ms-2"><i class="far fa-clock icon-color"></i> 10:00 AM - 12:00 PM</span>
                         </p>
-                        <p class="card-text mb-2">
-                            <span class="badge-type"><i class="fas fa-tag"></i> Academic</span>
+                        <p class="card-text mb-3">
+                            <i class="fas fa-tag icon-color"></i>
+                            <span class="text-color-venue"> Academic</span>
                         </p>
                         <hr>
                         <p class="card-text text-muted small">Equipment request submitted 3 days ago.</p>
@@ -288,18 +316,19 @@
                 <div class="card h-100 shadow-sm event-card">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <span>Department Meeting</span>
-                        <span class="event-status-badge status-upcoming">Upcoming</span>
+                        <span class="upcoming">Upcoming</span>
                     </div>
                     <div class="card-body">
-                        <p class="card-text mb-2">
-                            <span class="badge-venue"><i class="fas fa-map-marker-alt"></i> UM Main Hall</span>
+                        <p class="card-text mb-3">
+                            <i class="fas fa-map-marker-alt icon-color"></i>
+                            <span class="text-color-venue"> UM Main Hall</span>
                         </p>
-                        <p class="card-text mb-2">
-                            <span class="badge-time"><i class="far fa-calendar-alt"></i> Nov 15, 2023</span>
-                            <span class="badge-time ms-2"><i class="far fa-clock"></i> 10:00 AM - 10:00 AM</span>
+                        <p class="card-text mb-3">
+                            <span class="text-color-venue"><i class="far fa-calendar-alt icon-color"></i> Nov 15, 2023</span>
+                            <span class="text-color-venue ms-2"><i class="far fa-clock icon-color"></i> 10:00 AM - 10:00 AM</span>
                         </p>
-                        <p class="card-text mb-2">
-                            <span class="badge-type"><i class="fas fa-tag"></i> Meeting</span>
+                        <p class="card-text mb-">
+                            <span class="text-color-venue"><i class="fas fa-tag icon-color"></i> Meeting</span>
                         </p>
                         <hr>
                         <p class="card-text text-muted small">Created yesterday.</p>
