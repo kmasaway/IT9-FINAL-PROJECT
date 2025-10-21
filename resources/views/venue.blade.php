@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venues - EMS</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <style>
         body {
             background-color: #f8f9fa;
         }
         .navbar {
-            background-color: #8B0000; /* Dark Red - Similar to the image */
+            background-color: #8B0000; 
         }
         .navbar-brand, .nav-link {
             color: #ffffff !important;
@@ -72,7 +72,7 @@
         }
         .venue-details i {
             margin-right: 8px;
-            color: #8B0000; /* Dark Red */
+            color: #8B0000;
         }
         .map-placeholder {
             background-color: #e9ecef;
@@ -85,6 +85,11 @@
             font-size: 1.2rem;
             margin-bottom: 20px;
             border: 1px dashed #ced4da;
+        }
+        .btn-create-event:hover {
+            background-color: #5C0000;
+            border-color: #5C0000;
+            color: white;
         }
         .filter-section {
             background-color: #ffffff;
@@ -109,6 +114,17 @@
             background-color: #8B0000;
             color: #fff;
         }
+        .btn-create-event {
+            background-color: #800000; 
+            border-color: #800000;
+            color: white;
+        }
+        .btn-create-event:hover {
+            background-color: #5C0000;
+            border-color: #5C0000;
+            color: white;
+        }
+        
     </style>
 </head>
 <body>
@@ -172,14 +188,18 @@
             </div>
         </nav>
 
-    <div class="container mt-4">
-        <div class="header-section">
-            <h2 class="mb-0">Venues</h2>
-            <div>
-                <button class="btn btn-primary me-2"><i class="fas fa-plus-circle"></i> Add New Venue</button>
-                <button class="btn btn-outline-secondary"><i class="fas fa-cog"></i> Manage Venues</button>
-            </div>
-        </div>
+    <main class="flex-grow-1 p-4">
+            <div class="container-fluid py-3 border-bottom mb-1">
+            <header class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+                <div class="container d-flex justify-content-between align-items-center">    
+                <h1 class="h3 fw-bold text-gray-800 mb-0">Venues</h1>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-primary text-white d-flex align-items-center shadow-sm"><i class="fas fa-plus me-2"></i>Create New Event
+                    </button>
+                    <button class="btn btn-secondary d-flex align-items-center shadow-sm"><i class="fas fa-cogs me-2"></i>Settings
+                    </button>
+                </div>
+            </header>
 
         <div class="filter-section mb-4">
             <div class="row g-3 align-items-center">
@@ -344,8 +364,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>

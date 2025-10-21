@@ -14,7 +14,7 @@
             background-color: #8B0000;
         }
         .navbar {
-            background-color: #8B0000; /* Dark Red, similar to your header */
+            background-color: #8B0000;
         }
         .navbar-brand, .nav-link {
             color: white !important;
@@ -29,7 +29,7 @@
         .card-custom:hover {
             transform: translateY(-5px) scale(1.02);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-        }
+        }       
         .btn-red-custom {
             background-color: #8B0000;
             border-color: #8B0000;
@@ -38,7 +38,7 @@
             background-color: #8B0000; 
             border-color: #8B0000;
         }
-    </style>
+    </style>    
 </head>
 
 <body> 
@@ -50,7 +50,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand d-flex align-items-center" href="#">
                     <img src="{{ asset('images/um-logo.png') }}" alt="University of Mindanao Logo" style="height: 40px; width: 40px; margin-right: 0.5rem;">
-                    <h2 class="h5 mb-0 fw-bold">EMS</h2>
+                    <h2 class="h5 mb-0 fw-bold">EMS</h2>    
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -104,6 +104,7 @@
 
         <!-- Main Content -->
         <main class="flex-grow-1 p-4">
+            <div class="container-fluid py-3 border-bottom mb-1">
             <header class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
                 <div class="container d-flex justify-content-between align-items-center">    
                 <h1 class="h3 fw-bold text-gray-800 mb-0">Dashboard</h1>
@@ -224,7 +225,7 @@
                 </div>
             </div>
 
-            <!-- Placeholder for charts or more complex data visualization -->
+            <!-- Placeholder for charts-->
             <div class="card shadow-sm p-4 min-vh-25 d-flex align-items-center justify-content-center text-muted">
                 <p class="mb-0">Chart for Event Statistics (e.g., events per month, venue utilization) could go here.</p>
             </div>

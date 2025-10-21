@@ -23,5 +23,5 @@ Route::get('/logout', function () {
 })->name('logout');
 
 Route::get('/venues', function () {
-    return view('venues');
-})->name('venues');
+    return view('venue');
+})->name('venue');

@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Events - EMS</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             background-color: #f8f9fa;
         }
         .navbar {
-            background-color: #8B0000; /* Dark Red, similar to your header */
+            background-color: #8B0000;
         }
         .navbar-brand, .nav-link {
             color: white !important;
@@ -38,45 +36,45 @@
             padding: 0.4em 0.6em;
             border-radius: 0.25rem;
         }
-        .status-upcoming { background-color: #17a2b8; color: white; } /* Info Blue */
-        .status-completed { background-color: #28a745; color: white; } /* Success Green */
-        .status-cancelled { background-color: #dc3545; color: white; } /* Danger Red */
-        .status-pending { background-color: #ffc107; color: black; } /* Warning Yellow */
+        .status-upcoming { background-color: #17a2b8; color: white; } 
+        .status-completed { background-color: #28a745; color: white; } 
+        .status-cancelled { background-color: #dc3545; color: white; } 
+        .status-pending { background-color: #ffc107; color: black; } 
 
-        /* Custom styles for the event detail buttons/badges */
+       
         .badge-venue {
-            background-color: #007bff; /* Primary Blue */
+            background-color: #800000;
             color: white;
             padding: 0.4em 0.6em;
             border-radius: 0.25rem;
             font-size: 0.85em;
         }
         .badge-time {
-            background-color: #6c757d; /* Secondary Gray */
+            background-color: #6c757d;
             color: white;
             padding: 0.4em 0.6em;
             border-radius: 0.25rem;
             font-size: 0.85em;
         }
         .badge-type {
-            background-color: #6f42c1; /* Purple */
+            background-color: #7342c1ff; 
             color: white;
             padding: 0.4em 0.6em;
             border-radius: 0.25rem;
             font-size: 0.85em;
         }
         .btn-create-event {
-            background-color: #800000; /* Maroon color */
+            background-color: #800000; 
             border-color: #800000;
             color: white;
         }
         .btn-create-event:hover {
-            background-color: #5C0000; /* Slightly darker maroon on hover */
+            background-color: #5C0000;
             border-color: #5C0000;
             color: white;
         }
         .btn-settings {
-            background-color: #6c757d; /* Bootstrap secondary gray */
+            background-color: #6c757d; 
             border-color: #6c757d;
             color: white;
         }
@@ -84,6 +82,14 @@
             background-color: #5a6268;
             border-color: #545b62;
             color: white;
+        }
+        .btn-red{
+            background-color: #8B0000;
+            border-color: #8B0000;
+        }
+        .btn-red:hover {
+            background-color: #8B0000; 
+            border-color: #8B0000;
         }
 
     </style>
@@ -150,19 +156,21 @@
         </nav>
 
 
-    <div class="container-fluid py-3 border-bottom mb-1">
-        <header class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+     <main class="flex-grow-1 p-4">
+            <div class="container-fluid py-3 border-bottom mb-1">
+            <header class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+                <div class="container d-flex justify-content-between align-items-center">         
+                <h1 class="h3 fw-bold text-gray-800 mb-0">My Events</h1>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-red text-white d-flex align-items-center shadow-sm"><i class="fas fa-plus me-2"></i>Create New Event
+                    </button>
+                    <button class="btn btn-secondary d-flex align-items-center shadow-sm"><i class="fas fa-cogs me-2"></i>Settings
+                    </button>
+                </div>
             </header>
-        <div class="container d-flex justify-content-between align-items-center">
-            <h2 class="h3 fw-bold text-gray-800 mb-0">My Events</h2>
-            <div>
-                <button class="btn btn-create-event me-2"><i class="fas fa-plus-circle"></i> Create New Event</button>
-                <button class="btn btn-settings"><i class="fas fa-cogs"></i> Settings</button>
-            </div>
-        </div>
-    </div>
 
     <div class="container mt-4">
+        
         <!-- Filter/Search Section -->
         <div class="card mb-4 shadow-sm">
             <div class="card-body">
@@ -183,8 +191,8 @@
                         <input type="date" class="form-control">
                     </div>
                     <div class="col-md-2">
-                        <button type="submit" class="btn btn-info w-100"><i class="fas fa-filter"></i> Filter</button>
-                    </div>
+                    <button class="btn btn-create-event w-100"><i class="fas fa-filter"></i> Filter</button>
+                </div>
                 </form>
             </div>
         </div>

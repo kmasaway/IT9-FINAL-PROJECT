@@ -71,7 +71,7 @@
                             <!-- Placeholder for the University of Mindanao logo -->
                             <img src="{{ asset('images/um-logo.png') }}" alt="University of Mindanao Logo" class="me-3" style="height: 64px; width: 64px;">
                             <div>
-                                <h3 class="card-title h6 fw-bold text-dark mb-0">UNIVERSITY OF MINDANAO</h3>
+                                <h3 class="card-title h6 fw-bold text-dark   mb-0">UNIVERSITY OF MINDANAO</h3>
                                 <p class="mb-0 fw-bold text-dark">EVENTS MANAGEMENT SYSTEM</p>
                             </div>
                         </div>
