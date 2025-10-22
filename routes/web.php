@@ -29,3 +29,7 @@ Route::get('/venue', function () {
 Route::get('/equipment', function () {
     return view('equipment');
 })->name('equipment');
+
+Route::get('/report', function () {
+    return view('report');
+})->name('report');
