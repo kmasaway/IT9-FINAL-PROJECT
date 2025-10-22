@@ -80,7 +80,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center" href="#">
-                                <i class="fas fa-calendar-alt me-2"></i>
+                                <i class="fas fa-calendar-alt me-2"></i>    
                                 My Events
                             </a>
                         </li>
