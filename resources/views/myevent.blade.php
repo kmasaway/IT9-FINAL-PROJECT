@@ -115,6 +115,10 @@
             font-weight: light;
             font-family: Serif;
         }
+        .btn-outline-secondary {
+            color: #8B0000;
+            border-color: #8B0000;
+        }
 
     </style>
 </head>
@@ -233,14 +237,14 @@
                     <div class="card-body">
                         <p class="card-text mb-3">
                            <i class="fas fa-map-marker-alt icon-color"></i>
-                           <span class="text-color-venue"> Grand Auditorium</span>
+                           <span class=""> Grand Auditorium</span>
                         </p>
                         <p class="card-text mb-3">
-                            <span class="text-color-venue"><i class="far fa-calendar-alt icon-color"></i> Nov 20, 2023</span>
-                            <span class="text-color-venue ms-2"><i class="far fa-clock icon-color"></i> 9:00 AM - 5:00 PM</span>
+                            <span class=""><i class="far fa-calendar-alt icon-color"></i> Nov 20, 2023</span>
+                            <span class="ms-2"><i class="far fa-clock icon-color"></i> 9:00 AM - 5:00 PM</span>
                         </p>
                         <p class="card-text mb-3">
-                            <span class="text-color-venue"><i class="fas fa-tag icon-color"></i> Sports Event</span>
+                            <span class=""><i class="fas fa-tag icon-color"></i> Sports Event</span>
                         </p>
                         <hr>
                         <p class="card-text text-muted small">Created by John Doe 2 days ago.</p>
@@ -262,14 +266,14 @@
                     <div class="card-body">
                         <p class="card-text mb-3">
                             <i class="fas fa-map-marker-alt icon-color"></i>
-                            <span class="text-color-venue"> Main Hall</span>
+                            <span class=""> Main Hall</span>
                         </p>
                         <p class="card-text mb-3">
-                            <span class="text-color-venue"><i class="far fa-calendar-alt icon-color"></i> Oct 15, 2023</span>
-                            <span class="text-color-venue ms-2"><i class="far fa-clock icon-color"></i> 2:00 PM - 5:00 PM</span>
+                            <span class=""><i class="far fa-calendar-alt icon-color"></i> Oct 15, 2023</span>
+                            <span class="ms-2"><i class="far fa-clock icon-color"></i> 2:00 PM - 5:00 PM</span>
                         </p>
                         <p class="card-text mb-3">
-                            <span class="text-color-venue"><i class="fas fa-tag icon-color"></i> Academic</span>
+                            <span class=""><i class="fas fa-tag icon-color"></i> Academic</span>
                         </p>
                         <hr>
                         <p class="card-text text-muted small">Booked by Jane Smith 1 month ago.</p>
@@ -291,15 +295,15 @@
                     <div class="card-body">
                         <p class="card-text mb-3">
                             <i class="fas fa-map-marker-alt icon-color"></i>
-                            <span class="text-color-venue"> Conference Room 1</span>
+                            <span class=""> Conference Room 1</span>
                         </p>
                         <p class="card-text mb-3">
-                            <span class="text-color-venue"><i class="far fa-calendar-alt icon-color"></i> Dec 1, 2023</span>
-                            <span class="text-color-venue ms-2"><i class="far fa-clock icon-color"></i> 10:00 AM - 12:00 PM</span>
+                            <span class=""><i class="far fa-calendar-alt icon-color"></i> Dec 1, 2023</span>
+                            <span class="ms-2"><i class="far fa-clock icon-color"></i> 10:00 AM - 12:00 PM</span>
                         </p>
                         <p class="card-text mb-3">
                             <i class="fas fa-tag icon-color"></i>
-                            <span class="text-color-venue"> Academic</span>
+                            <span class=""> Academic</span>
                         </p>
                         <hr>
                         <p class="card-text text-muted small">Equipment request submitted 3 days ago.</p>
@@ -321,14 +325,14 @@
                     <div class="card-body">
                         <p class="card-text mb-3">
                             <i class="fas fa-map-marker-alt icon-color"></i>
-                            <span class="text-color-venue"> UM Main Hall</span>
+                            <span class=""> UM Main Hall</span>
                         </p>
                         <p class="card-text mb-3">
-                            <span class="text-color-venue"><i class="far fa-calendar-alt icon-color"></i> Nov 15, 2023</span>
-                            <span class="text-color-venue ms-2"><i class="far fa-clock icon-color"></i> 10:00 AM - 10:00 AM</span>
+                            <span class=""><i class="far fa-calendar-alt icon-color"></i> Nov 15, 2023</span>
+                            <span class="ms-2"><i class="far fa-clock icon-color"></i> 10:00 AM - 10:00 AM</span>
                         </p>
                         <p class="card-text mb-">
-                            <span class="text-color-venue"><i class="fas fa-tag icon-color"></i> Meeting</span>
+                            <span class=""><i class="fas fa-tag icon-color"></i> Meeting</span>
                         </p>
                         <hr>
                         <p class="card-text text-muted small">Created yesterday.</p>

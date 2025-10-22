@@ -124,6 +124,12 @@
             border-color: #5C0000;
             color: white;
         }
+        .text-color-venue {
+            color: #000000ff;
+            font-size: 16px;
+            font-weight: light;
+            font-family: sans-serif;
+        }
         
     </style>
 </head>
@@ -242,9 +248,9 @@
                                 <h5 class="card-title">Grand Auditorium</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">A magnificent space for large-scale events.</h6>
                                 <p class="venue-details">
-                                    <i class="fas fa-expand-arrows-alt"></i> Capacity: 1200 <br>
+                                    <i class="fas fa-expand-arrows-alt"></i>Capacity: 1200 <br>
                                     <i class="fas fa-map-marker-alt"></i> Building A, Main Campus <br>
-                                    <i class="fas fa-tags"></i> <span class="badge bg-info">Auditorium</span> <span class="badge bg-warning text-dark">Lecture</span>
+                                    <i class="fas fa-tags"></i>Auditorium <span class="">-</span> <span class="">Lecture</span>
                                 </p>
                                 <hr>
                                 <div class="d-flex justify-content-between">
@@ -263,9 +269,9 @@
                                 <h5 class="card-title">Conference Room 1</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Ideal for smaller meetings and presentations.</h6>
                                 <p class="venue-details">
-                                    <i class="fas fa-expand-arrows-alt"></i> Capacity: 50 <br>
+                                    <i class="fas fa-expand-arrows-alt"></i><span class="">Capacity: 50</span> <br>
                                     <i class="fas fa-map-marker-alt"></i> Level 3, Academic Block <br>
-                                    <i class="fas fa-tags"></i> <span class="badge bg-primary">Meeting Room</span> <span class="badge bg-secondary">Seminar</span>
+                                    <i class="fas fa-tags"></i><span class="">Meeting Room</span> <span class="">-</span> <span class="">Seminar</span>
                                 </p>
                                 <hr>
                                 <div class="d-flex justify-content-between">
@@ -284,9 +290,9 @@
                                 <h5 class="card-title">University Sports Arena</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Multi-purpose arena for sports and large gatherings.</h6>
                                 <p class="venue-details">
-                                    <i class="fas fa-expand-arrows-alt"></i> Capacity: 2500 <br>
+                                    <i class="fas fa-expand-arrows-alt"></i>Capacity: 2500 <br>
                                     <i class="fas fa-map-marker-alt"></i> Sports Complex <br>
-                                    <i class="fas fa-tags"></i> <span class="badge bg-success">Sports</span> <span class="badge bg-danger">Event Hall</span>
+                                    <i class="fas fa-tags"></i><span class="">Event Hall</span> <span class="">-</span> <span class="">Sports</span>
                                 </p>
                                 <hr>
                                 <div class="d-flex justify-content-between">
@@ -303,11 +309,11 @@
                             <img src="https://via.placeholder.com/400x200/DA70D6/FFFFFF?text=Main+Hall" class="card-img-top" alt="Main Hall">
                             <div class="card-body">
                                 <h5 class="card-title">Main Hall</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">A classic hall for ceremonies and formal events.</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">A classic hall for ceremonies and formal events.  </h6>
                                 <p class="venue-details">
-                                    <i class="fas fa-expand-arrows-alt"></i> Capacity: 500 <br>
-                                    <i class="fas fa-map-marker-alt"></i> Central Building <br>
-                                    <i class="fas fa-tags"></i> <span class="badge bg-dark">Ceremony</span> <span class="badge bg-info">Exhibition</span>
+                                    <i class="fas fa-expand-arrows-alt"></i>Capacity: 500<br>
+                                    <i class="fas fa-map-marker-alt"></i> Central Building<br>
+                                    <i class="fas fa-tags"></i>Ceremony <span class="text-color-venue">-</span> <span class="">Exhibition</span>
                                 </p>
                                 <hr>
                                 <div class="d-flex justify-content-between">
