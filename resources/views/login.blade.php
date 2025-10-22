@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Events Management</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/um-logo.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -13,7 +14,7 @@
         }
         .um-red-bg:hover {
             background-color: #A52A2A; 
-        }
+        }   
         .um-red-text {
             color: #8B0000;
         }
@@ -28,6 +29,7 @@
             box-shadow: 0 0 0 0.25rem rgba(165, 42, 42, 0.25);
         }
     </style>
+
 </head>
 
 <body class="bg-light font-sans antialiased d-flex align-items-center justify-content-center min-vh-100">
