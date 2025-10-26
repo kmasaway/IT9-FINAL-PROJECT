@@ -78,7 +78,7 @@
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center" href="#">
                                 <i class="fas fa-tools me-2"></i>
-                                Equipment
+                                Equipments
                             </a>
                         </li>
                         <li class="nav-item">
@@ -101,5 +101,137 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Main Content -->
+        <main class="flex-grow-1 container mt-5">
+            <h1 class="mb-4 text-center">Event Reports Summary</h1>
+
+            <div class="row g-4">
+                <!-- Total Events Card -->
+                <div class="col-md-4">
+                    <div class="card card-custom text-center shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="fas fa-calendar-check fa-4x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Total Events</h5>
+                            <p class="card-text fs-3">150</p>
+                            <a href="#" class="btn btn-red-custom btn-sm" onclick="viewReport('Total Events')">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Events Card -->
+                <div class="col-md-4">
+                    <div class="card card-custom text-center shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="fas fa-calendar-plus fa-4x text-info mb-3"></i>
+                            <h5 class="card-title fw-bold">Upcoming Events</h5>
+                            <p class="card-text fs-3">25</p>
+                            <a href="#" class="btn btn-red-custom btn-sm" onclick="viewReport('Upcoming Events')">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Completed Events Card -->
+                <div class="col-md-4">
+                    <div class="card card-custom text-center shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="fas fa-calendar-day fa-4x text-success mb-3"></i>
+                            <h5 class="card-title fw-bold">Completed Events</h5>
+                            <p class="card-text fs-3">125</p>
+                            <a href="#" class="btn btn-red-custom btn-sm" onclick="viewReport('Completed Events')">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total Venues Card -->
+                <div class="col-md-4">
+                    <div class="card card-custom text-center shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="fas fa-map-marker-alt fa-4x text-danger mb-3"></i>
+                            <h5 class="card-title fw-bold">Total Venues</h5>
+                            <p class="card-text fs-3">12</p>
+                            <a href="#" class="btn btn-red-custom btn-sm" onclick="viewReport('Total Venues')">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booked Venues Card -->
+                <div class="col-md-4">
+                    <div class="card card-custom text-center shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="fas fa-building fa-4x text-warning mb-3"></i>
+                            <h5 class="card-title fw-bold">Booked Venues</h5>
+                            <p class="card-text fs-3">8</p>
+                            <a href="#" class="btn btn-red-custom btn-sm" onclick="viewReport('Booked Venues')">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Available Venues Card -->
+                <div class="col-md-4">
+                    <div class="card card-custom text-center shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="fas fa-house-chimney fa-4x text-secondary mb-3"></i>
+                            <h5 class="card-title fw-bold">Available Venues</h5>
+                            <p class="card-text fs-3">4</p>
+                            <a href="#" class="btn btn-red-custom btn-sm" onclick="viewReport('Available Venues')">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total Equipment Card -->
+                <div class="col-md-4">
+                    <div class="card card-custom text-center shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="fas fa-tools fa-4x text-dark mb-3"></i>
+                            <h5 class="card-title fw-bold">Total Equipment</h5>
+                            <p class="card-text fs-3">500</p>
+                            <a href="#" class="btn btn-red-custom btn-sm" onclick="viewReport('Total Equipment')">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Allocated Equipment Card -->
+                <div class="col-md-4">
+                    <div class="card card-custom text-center shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="fas fa-cogs fa-4x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Allocated Equipment</h5>
+                            <p class="card-text fs-3">300</p>
+                            <a href="#" class="btn btn-red-custom btn-sm" onclick="viewReport('Allocated Equipment')">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Available Equipment Card -->
+                <div class="col-md-4">
+                    <div class="card card-custom text-center shadow-sm h-100">
+                        <div class="card-body">
+                            <i class="fas fa-screwdriver-wrench fa-4x text-success mb-3"></i>
+                            <h5 class="card-title fw-bold">Available Equipment</h5>
+                            <p class="card-text fs-3">200</p>
+                            <a href="#" class="btn btn-red-custom btn-sm" onclick="viewReport('Available Equipment')">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer mt-auto py-3 bg-light">
+            <div class="container text-center">
+                <span class="text-muted">&copy; 2025 University of Mindanao. All Rights Reserved.</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function viewReport(reportType) {
+            alert(`Viewing details for: ${reportType}`);
+            console.log(`Action: User clicked to view details for "${reportType}"`);
+        }
+    </script>
 </body>
 </html>
